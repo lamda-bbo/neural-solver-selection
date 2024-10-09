@@ -1,0 +1,14 @@
+save_path: TSPtrain
+seed: 4321
+dataset_size: 1000000
+problem_type: TSP
+problem_size_lower: 50
+problem_size_upper: 500
+distribution: Gaussian
+Gaussian_params:
+  no_cov: False
+  var_lower: 1.0
+  var_upper: 100.0
+  num_modes_lower: 0
+  num_modes_upper: 15
+capacity: scale,random_triangular # [scale, triangular, random_triangular]
