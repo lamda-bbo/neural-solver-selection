@@ -1,0 +1,29 @@
+name: CVRPtrain
+problem_type: CVRP
+cuda_device_num: 1
+logger: no_logger # [wandb, no_logger]
+load_path: 
+seed: 1234
+train_params:
+  num_classes: 5
+  start_epochs: 0
+  num_epochs: 50
+  train_batch_size: 64
+  test_batch_size: 8
+  learning_rate: 0.0001
+  weight_decay: 0.000001
+  save_interval: 1
+  loss: rank  # [CE, rank]
+  manual_feature: False
+  ns_feature: False
+  data_aug: True
+model_params:
+  pooling: True
+  downsample_ratio: 0.8
+  embedding_dim: 128
+  encoder_layer_num: 2
+  block_num: 2
+  head_num: 8
+  qkv_dim: 16
+  ff_hidden_dim: 512
+  norm: rezero
