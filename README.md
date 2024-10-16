@@ -1,5 +1,5 @@
 # Neural Solver Selection for Combinatorial Optimization
-Official implementation of Arxiv preprint paper: "".
+Official implementation of Arxiv preprint paper: "[Neural Solver Selection for Combinatorial Optimization](https://arxiv.org/pdf/2410.09693v1)".
 
 **Authors**: Chengrui Gao, Haopu Shang, Ke Xue, Chao Qian. 
 
@@ -28,4 +28,12 @@ You can use `experiments/generate_experiments_shell.py` and `experiments/generat
 
 ## Reference
 If you found this reposity is useful for your research, please cite the paper:
+```bibtext
+@article{gao2024selection,
+  title={Neural Solver Selection for Combinatorial Optimization},
+  author={Gao, Chengrui and Shang, Haopu and Xue, Ke and Qian, Chao},
+  journal={arXiv:2410.09693},
+  year={2024}
+}
+```
 
