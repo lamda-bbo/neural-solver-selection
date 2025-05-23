@@ -1,5 +1,5 @@
 # Neural Solver Selection for Combinatorial Optimization
-Official implementation of Arxiv preprint paper: "[Neural Solver Selection for Combinatorial Optimization](https://arxiv.org/pdf/2410.09693v1)".
+Official implementation of **ICML25** paper: "[Neural Solver Selection for Combinatorial Optimization](https://arxiv.org/pdf/2410.09693v1)".
 
 **Authors**: Chengrui Gao, Haopu Shang, Ke Xue, Chao Qian. 
 
@@ -22,18 +22,19 @@ python run.py --gpu_id 0
 ```
 The pretrained checkpoints of ranking model on TSP and CVRP are provided in the `train_logs/` folder. 
 
-Most hyperparameters are configured using `.yml` files, such as `config_CVRP.yml` and `config_TSP.yml`, where default hyperparameters to reprofuce our results are provided. 
+Most hyperparameters are configured using `.yml` files, such as `config_CVRP.yml` and `config_TSP.yml`, where default hyperparameters to reproduce our results are provided. 
 
 You can use `experiments/generate_experiments_shell.py` and `experiments/generate_test_shell.py` to generate more scripts for training and testing selection models. 
 
 ## Reference
-If you found this reposity is useful for your research, please cite the paper:
+If you found this repository is useful for your research, please cite the paper:
 ```bibtext
-@article{gao2024selection,
+@inproceedings{gao2025selection,
   title={Neural Solver Selection for Combinatorial Optimization},
   author={Gao, Chengrui and Shang, Haopu and Xue, Ke and Qian, Chao},
-  journal={arXiv:2410.09693},
-  year={2024}
+  booktitle={Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  address={Vancouver, Canada},
+  year={2025}
 }
 ```
 
