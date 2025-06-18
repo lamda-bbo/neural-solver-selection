@@ -81,6 +81,8 @@ if __name__ == "__main__":
     else:
         config['train_params']['num_epochs'] = 0    # only test
         log_dir = 'results'
+        if not os.path.exists(log_dir):
+            os.mkdir(log_dir)
         logger['file'] = csv_logger(log_dir, args.exp_name)
     print(config)
 
